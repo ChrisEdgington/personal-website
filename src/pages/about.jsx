@@ -41,10 +41,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Spencer Sharp</title>
+        <title>About - Chris Edgington</title>
         <meta
           name="description"
-          content="I’m Spencer Sharp. I live in New York City, where I design the future."
+          content="I’m Chris Edgington. I live in Bunker Hill, Indiana, between two corn fields, where I solve hard problems from my basement office."
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -61,35 +61,50 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Spencer Sharp. I live in New York City, where I design the
-              future.
+              I’m Chris Edgington. I live in Bunker Hill, Indiana, between two
+              corn fields, where I solve hard problems in software architecture
+              from my basement office.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
+                I am a guy who gets things done. My greatest strength is coming
+                into situations where projects are in trouble, people have left,
+                schedules are behind, etc., quickly determining the “reality” of
+                the project and leading the way out of chaos. Experience at all
+                levels of information technology (from hardware design to large
+                team management) enables me to quickly adapt to new and
+                unpredictable circumstances.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister’s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I’d be able to get to orbit.
+                I dreamed of owning a computer when I was in elementary school,
+                long before the internet and before people had computers in
+                their homes. I would goto our local library and read every book
+                and magazine they had about computers and software. My dad
+                bought me my first computer, an Atari 800, which had an 8-bit
+                processor, 16K of RAM, and ran at a whopping 1.79 Mhz. I taught
+                myself how to program in BASIC on that Atari and have been
+                learning constantly since then.</p>
+                <p>After being discouraged to pursue software by my high school guidance counselor, "There is no future in computers," is what she said in 1987, I started a pre-medicine path in college.
+                I quickly discovered that my love for software had not changed, as I wrote custom software to solve chemistry lab problems, I knew this was what I needed to do. After transitioning to computer science, I determined that I was
+                self-teaching faster than the college process so I dropped out to write software. Within a few years, I started remote working back here in Indiana, before it was a thing (actually before the internet existed). We would use Fedex
+                to send CDs of source code back and forth.
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad’s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
+                I have thirty-three years of hands-on development, research,
+                architecture and communication experience in the global software
+                industry. I have deep experience designing and implementing
+                solutions in most modern languages and advanced debugging skills
+                using both high-end debug tools and just plain-old-logging.
+                Doing contract work for over a decade helped me become very
+                adept at quickly coming up to speed on large sets of source code
+                and solving problems within that source code in a short amount
+                of time. I have also developed solid technical writing skills
+                from years of writing technical proposal, design, and research
+                documents. I also have many years of non-technical public
+                speaking and leadership experience.
               </p>
               <p>
-                Today, I’m the founder of Planetaria, where we’re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
-                make it to orbit — from the comfort of their own backyards.
+                Now in the empty-nest stage of life, I still love learning new technologies, tinkering with new software "toys", and any kind of adventure.
               </p>
             </div>
           </div>
@@ -108,11 +123,11 @@ export default function About() {
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:spencer@planetaria.tech"
+                href="mailto:chris@cedgington.dev"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                spencer@planetaria.tech
+                chris@cedgington.dev
               </SocialLink>
             </ul>
           </div>

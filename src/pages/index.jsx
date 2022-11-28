@@ -12,11 +12,11 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image1 from '@/images/photos/photo-1.jpg'
+import image2 from '@/images/photos/photo-2.jpg'
+import image3 from '@/images/photos/photo-3.jpg'
+import image4 from '@/images/photos/photo-4.jpg'
+import image5 from '@/images/photos/photo-5.jpg'
 import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
@@ -225,11 +225,11 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {[image1, image2, image4, image5].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+              'relative aspect-[12/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:rounded-2xl',
               rotations[imageIndex % rotations.length]
             )}
           >
@@ -251,24 +251,20 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Spencer Sharp - Software designer, founder, and amateur astronaut
+          Chris Edgington - Software architect, expert problem solver, adventurer, and coach to all ages.
         </title>
         <meta
           name="description"
-          content="I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Chris, a software architect and problem solver based in rural Indiana. I love solving hard problems in software and in life, and especially enjoy coaching others on solve their own problems and find adventure in the process. I’m also the founder and director of The Lighthouse, where me and roughly thirty of my friends spend time weekly with local teenagers, getting to know them and helping them find their way to the life they were made for. I also love playing music, going on wilderness adventures and playing ultimate frisbee."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            Software architect, expert problem solver, adventurer, and coach to all ages.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
-          </p>
+          I’m Chris, a software architect and problem solver based in rural Indiana. I love solving hard problems in software and in life, and especially enjoy coaching others on solve their own problems and find adventure in the process. I’m also the founder and director of The Lighthouse, where me and roughly thirty of my friends spend time weekly with local teenagers, getting to know them and helping them find their way to the life they were made for. I also love playing music, going on wilderness adventures and playing ultimate frisbee.          </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://twitter.com"
@@ -296,15 +292,15 @@ export default function Home({ articles }) {
       <Photos />
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
+          {/* <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            <Newsletter /> */}
             <Resume />
-          </div>
+          {/* </div> */}
         </div>
       </Container>
     </>
