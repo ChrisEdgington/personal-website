@@ -17,10 +17,10 @@ import image2 from '@/images/photos/photo-2.jpg'
 import image3 from '@/images/photos/photo-3.jpg'
 import image4 from '@/images/photos/photo-4.jpg'
 import image5 from '@/images/photos/photo-5.jpg'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoAptiv from '@/images/logos/aptiv.png'
+import logoRoadiq from '@/images/logos/roadiq.png'
+import logoZinc from '@/images/logos/zinc.png'
+import logoPhotodex from '@/images/logos/photodex.png'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -139,9 +139,9 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
+      company: 'Zinc Technologies',
+      title: 'Core Software Engineer',
+      logo: logoZinc,
       start: '2019',
       end: {
         label: 'Present',
@@ -149,23 +149,23 @@ function Resume() {
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
+      company: 'Road-iQ',
+      title: 'Staff Software Engineer',
+      logo: logoRoadiq,
+      start: '2015',
       end: '2019',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
+      company: 'Delphi Electronics (now Aptiv)',
+      title: 'Senior Software Engineer',
+      logo: logoAptiv,
       start: '2011',
-      end: '2014',
+      end: '2015',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
+      company: 'Photodex',
+      title: 'Staff Software Engineer',
+      logo: logoPhotodex,
       start: '2008',
       end: '2011',
     },
@@ -212,7 +212,7 @@ function Resume() {
         ))}
       </ol>
       <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+        Download Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
