@@ -304,16 +304,6 @@ export default function Home({ articles }) {
                 unpredictable circumstances.
               </p>
               <p>
-                I dreamed of owning a computer when I was in elementary school,
-                long before the internet and before people had computers in
-                their homes. I would goto our local library and read every book
-                and magazine they had about computers and software. My dad
-                bought me my first computer, an Atari 800, which had an 8-bit
-                processor, 16K of RAM, and ran at a whopping 1.79 Mhz. I taught
-                myself how to program in BASIC on that Atari and have been
-                learning constantly since then.
-              </p>
-              <p>
                 After being discouraged to pursue software by my high school
                 guidance counselor, {'"'}There is no future in computers,{'"'} is what
                 she said in 1987, I started a pre-medicine path in college. I
@@ -341,9 +331,15 @@ export default function Home({ articles }) {
                 speaking and leadership experience.
               </p>
               <p>
+                Here are some things folks I have worked with have to say:<br></br><br></br>
+                <div className="pl-2">
+                  <h3 className="italic">Chris is the guy you want on your team to make sure your product ships. ~ Mark Moeller, CTO of Velvac / Road-iQ</h3>
+                </div>
+              </p>
+              <p>
                 Now in the empty-nest stage of life, I still love learning new
-                technologies, tinkering with new software {'"'}toys{'"'}, and any kind
-                of adventure.
+                things, tinkering with new software {'"'}toys{'"'}, and any kind
+                of adventure. I love {'"'}finishing{'"'} things - especially shipping software.
               </p>
             </div>
           </div>
