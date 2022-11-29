@@ -24,6 +24,7 @@ import logoPhotodex from '@/images/logos/photodex.png'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
+import portraitImage from '@/images/portrait.jpg'
 
 function MailIcon(props) {
   return (
@@ -99,11 +100,17 @@ function Article({ article }) {
   )
 }
 
-function SocialLink({ icon: Icon, ...props }) {
+function SocialLink({ className, href, children, icon: Icon }) {
   return (
-    <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
-    </Link>
+    <li className={clsx(className, 'flex')}>
+      <Link
+        href={href}
+        className="group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+      >
+        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-teal-500" />
+        <span className="ml-4">{children}</span>
+      </Link>
+    </li>
   )
 }
 
@@ -172,7 +179,7 @@ function Resume() {
   ]
 
   return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+    <div className="rounded-2xl border border-zinc-100 dark:border-zinc-700/40">
       <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Work</span>
@@ -259,12 +266,156 @@ export default function Home({ articles }) {
           content="I’m Chris, a software architect and problem solver based in rural Indiana."
         />
       </Head>
-      <Container className="mt-9">
+      <Container className="mt-16 sm:mt-32">
+        <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+          <div className="lg:pl-20">
+            <div className="max-w-xs px-2.5 lg:max-w-none">
+              <Image
+                src={portraitImage}
+                alt=""
+                sizes="(min-width: 1024px) 32rem, 20rem"
+                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              />
+            </div>
+          </div>
+          <div className="lg:order-first lg:row-span-2">
+            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+            Software architect, expert problem solver, and adventure lover.
+            </h1>
+            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+              <p>
+              I’m Chris, a software architect and problem solver based in rural
+            Indiana. I love solving hard problems in software and in life, and
+            especially enjoy coaching others on solving their own problems and
+            finding adventure in the process. I’m also the founder and director
+            of The Lighthouse, where me and roughly thirty of my friends spend
+            time weekly with local teenagers, getting to know them and helping
+            them find their way to the life they were made for. I also love
+            playing music, going on wilderness adventures and playing ultimate
+            frisbee.
+              </p>
+              <p>
+                I am a guy who gets things done. My greatest strength is coming
+                into situations where projects are in trouble, people have left,
+                schedules are behind, etc., quickly determining the “reality” of
+                the project and leading the way out of chaos. Experience at all
+                levels of information technology (from hardware design to large
+                team management) enables me to quickly adapt to new and
+                unpredictable circumstances.
+              </p>
+              <p>
+                I dreamed of owning a computer when I was in elementary school,
+                long before the internet and before people had computers in
+                their homes. I would goto our local library and read every book
+                and magazine they had about computers and software. My dad
+                bought me my first computer, an Atari 800, which had an 8-bit
+                processor, 16K of RAM, and ran at a whopping 1.79 Mhz. I taught
+                myself how to program in BASIC on that Atari and have been
+                learning constantly since then.
+              </p>
+              <p>
+                After being discouraged to pursue software by my high school
+                guidance counselor, {'"'}There is no future in computers,{'"'} is what
+                she said in 1987, I started a pre-medicine path in college. I
+                quickly discovered that my love for software had not changed, as
+                I wrote custom software to solve chemistry lab problems, I knew
+                this was what I needed to do. After transitioning to computer
+                science, I determined that I was self-teaching faster than the
+                college process so I dropped out to write software. Within a few
+                years, I started remote working back here in Indiana, before it
+                was a thing (actually before the internet existed). We would use
+                Fedex to send CDs of source code back and forth.
+              </p>
+              <p>
+                I have thirty-three years of hands-on development, research,
+                architecture and communication experience in the global software
+                industry. I have deep experience designing and implementing
+                solutions in most modern languages and advanced debugging skills
+                using both high-end debug tools and just plain-old-logging.
+                Doing contract work for over a decade helped me become very
+                adept at quickly coming up to speed on large sets of source code
+                and solving problems within that source code in a short amount
+                of time. I have also developed solid technical writing skills
+                from years of writing technical proposal, design, and research
+                documents. I also have many years of non-technical public
+                speaking and leadership experience.
+              </p>
+              <p>
+                Now in the empty-nest stage of life, I still love learning new
+                technologies, tinkering with new software {'"'}toys{'"'}, and any kind
+                of adventure.
+              </p>
+            </div>
+          </div>
+          <div className="lg:pl-20 text-zinc-800 dark:text-zinc-100">
+            <ul role="list">
+              <SocialLink
+                href="https://twitter.com/EdgingtonC"
+                icon={TwitterIcon}
+              >
+                Follow on Twitter
+              </SocialLink>
+              <SocialLink
+                href="https://www.instagram.com/edgingtonchris/"
+                icon={InstagramIcon}
+                className="mt-4"
+              >
+                Follow on Instagram
+              </SocialLink>
+              <SocialLink
+                href="https://github.com/ChrisEdgington"
+                icon={GitHubIcon}
+                className="mt-4"
+              >
+                Follow on GitHub
+              </SocialLink>
+              <SocialLink
+                href="https://www.linkedin.com/in/chris-edgington-46973533/"
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
+                Follow on LinkedIn
+              </SocialLink>
+              <SocialLink
+                href="mailto:chris@cedgington.dev"
+                icon={MailIcon}
+                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
+              >
+                chris@cedgington.dev
+              </SocialLink>
+            </ul>
+        <div className="mt-8">
+          {/* <div className="flex flex-col gap-16">
+            {articles.map((article) => (
+              <Article key={article.slug} article={article} />
+            ))}
+          </div>
+          <div className="space-y-10 lg:pl-16 xl:pl-24">
+            <Newsletter /> */}
+          <Resume />
+          {/* </div> */}
+        </div>
+          </div>
+
+        </div>
+      </Container>
+      {/* <Container className="mt-9">
+      <div className="grid grid-cols-2 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="max-w-2xl">
+        <div className="max-w-xs px-2.5 lg:max-w-none">
+              <Image
+                src={portraitImage}
+                alt=""
+                sizes="(min-width: 1024px) 32rem, 20rem"
+                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              />
+            </div>
+
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
             Software architect, expert problem solver, and adventure lover.
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+          <p>
             I’m Chris, a software architect and problem solver based in rural
             Indiana. I love solving hard problems in software and in life, and
             especially enjoy coaching others on solving their own problems and
@@ -275,6 +426,58 @@ export default function Home({ articles }) {
             playing music, going on wilderness adventures and playing ultimate
             frisbee.
           </p>
+              <p>
+                I am a guy who gets things done. My greatest strength is coming
+                into situations where projects are in trouble, people have left,
+                schedules are behind, etc., quickly determining the “reality” of
+                the project and leading the way out of chaos. Experience at all
+                levels of information technology (from hardware design to large
+                team management) enables me to quickly adapt to new and
+                unpredictable circumstances.
+              </p>
+              <p>
+                I dreamed of owning a computer when I was in elementary school,
+                long before the internet and before people had computers in
+                their homes. I would goto our local library and read every book
+                and magazine they had about computers and software. My dad
+                bought me my first computer, an Atari 800, which had an 8-bit
+                processor, 16K of RAM, and ran at a whopping 1.79 Mhz. I taught
+                myself how to program in BASIC on that Atari and have been
+                learning constantly since then.
+              </p>
+              <p>
+                After being discouraged to pursue software by my high school
+                guidance counselor, {'"'}There is no future in computers,{'"'} is what
+                she said in 1987, I started a pre-medicine path in college. I
+                quickly discovered that my love for software had not changed, as
+                I wrote custom software to solve chemistry lab problems, I knew
+                this was what I needed to do. After transitioning to computer
+                science, I determined that I was self-teaching faster than the
+                college process so I dropped out to write software. Within a few
+                years, I started remote working back here in Indiana, before it
+                was a thing (actually before the internet existed). We would use
+                Fedex to send CDs of source code back and forth.
+              </p>
+              <p>
+                I have thirty-three years of hands-on development, research,
+                architecture and communication experience in the global software
+                industry. I have deep experience designing and implementing
+                solutions in most modern languages and advanced debugging skills
+                using both high-end debug tools and just plain-old-logging.
+                Doing contract work for over a decade helped me become very
+                adept at quickly coming up to speed on large sets of source code
+                and solving problems within that source code in a short amount
+                of time. I have also developed solid technical writing skills
+                from years of writing technical proposal, design, and research
+                documents. I also have many years of non-technical public
+                speaking and leadership experience.
+              </p>
+              <p>
+                Now in the empty-nest stage of life, I still love learning new
+                technologies, tinkering with new software {'"'}toys{'"'}, and any kind
+                of adventure.
+              </p>
+              </div>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://twitter.com"
@@ -298,21 +501,9 @@ export default function Home({ articles }) {
             />
           </div>
         </div>
-      </Container>
-      <Photos />
-      <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          {/* <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))}
-          </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter /> */}
-          <Resume />
-          {/* </div> */}
         </div>
-      </Container>
+      </Container> */}
+      <Photos />
     </>
   )
 }
