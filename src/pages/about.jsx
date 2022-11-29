@@ -83,11 +83,20 @@ export default function About() {
                 bought me my first computer, an Atari 800, which had an 8-bit
                 processor, 16K of RAM, and ran at a whopping 1.79 Mhz. I taught
                 myself how to program in BASIC on that Atari and have been
-                learning constantly since then.</p>
-                <p>After being discouraged to pursue software by my high school guidance counselor, "There is no future in computers," is what she said in 1987, I started a pre-medicine path in college.
-                I quickly discovered that my love for software had not changed, as I wrote custom software to solve chemistry lab problems, I knew this was what I needed to do. After transitioning to computer science, I determined that I was
-                self-teaching faster than the college process so I dropped out to write software. Within a few years, I started remote working back here in Indiana, before it was a thing (actually before the internet existed). We would use Fedex
-                to send CDs of source code back and forth.
+                learning constantly since then.
+              </p>
+              <p>
+                After being discouraged to pursue software by my high school
+                guidance counselor, {'"'}There is no future in computers,{'"'} is what
+                she said in 1987, I started a pre-medicine path in college. I
+                quickly discovered that my love for software had not changed, as
+                I wrote custom software to solve chemistry lab problems, I knew
+                this was what I needed to do. After transitioning to computer
+                science, I determined that I was self-teaching faster than the
+                college process so I dropped out to write software. Within a few
+                years, I started remote working back here in Indiana, before it
+                was a thing (actually before the internet existed). We would use
+                Fedex to send CDs of source code back and forth.
               </p>
               <p>
                 I have thirty-three years of hands-on development, research,
@@ -104,22 +113,39 @@ export default function About() {
                 speaking and leadership experience.
               </p>
               <p>
-                Now in the empty-nest stage of life, I still love learning new technologies, tinkering with new software "toys", and any kind of adventure.
+                Now in the empty-nest stage of life, I still love learning new
+                technologies, tinkering with new software {'"'}toys{'"'}, and any kind
+                of adventure.
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="https://twitter.com/EdgingtonC" icon={TwitterIcon}>
+              <SocialLink
+                href="https://twitter.com/EdgingtonC"
+                icon={TwitterIcon}
+              >
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="https://www.instagram.com/edgingtonchris/" icon={InstagramIcon} className="mt-4">
+              <SocialLink
+                href="https://www.instagram.com/edgingtonchris/"
+                icon={InstagramIcon}
+                className="mt-4"
+              >
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="https://github.com/ChrisEdgington" icon={GitHubIcon} className="mt-4">
+              <SocialLink
+                href="https://github.com/ChrisEdgington"
+                icon={GitHubIcon}
+                className="mt-4"
+              >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="https://www.linkedin.com/in/chris-edgington-46973533/" icon={LinkedInIcon} className="mt-4">
+              <SocialLink
+                href="https://www.linkedin.com/in/chris-edgington-46973533/"
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
