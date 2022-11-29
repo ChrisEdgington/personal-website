@@ -251,20 +251,30 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Chris Edgington - Software architect, expert problem solver, adventurer, and coach to all ages.
+          Chris Edgington - Software architect, expert problem solver, and
+          adventure lover.
         </title>
         <meta
           name="description"
-          content="I’m Chris, a software architect and problem solver based in rural Indiana. I love solving hard problems in software and in life, and especially enjoy coaching others on solve their own problems and find adventure in the process. I’m also the founder and director of The Lighthouse, where me and roughly thirty of my friends spend time weekly with local teenagers, getting to know them and helping them find their way to the life they were made for. I also love playing music, going on wilderness adventures and playing ultimate frisbee."
+          content="I’m Chris, a software architect and problem solver based in rural Indiana."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software architect, expert problem solver, adventurer, and coach to all ages.
+            Software architect, expert problem solver, and adventure lover.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I’m Chris, a software architect and problem solver based in rural Indiana. I love solving hard problems in software and in life, and especially enjoy coaching others on solve their own problems and find adventure in the process. I’m also the founder and director of The Lighthouse, where me and roughly thirty of my friends spend time weekly with local teenagers, getting to know them and helping them find their way to the life they were made for. I also love playing music, going on wilderness adventures and playing ultimate frisbee.          </p>
+            I’m Chris, a software architect and problem solver based in rural
+            Indiana. I love solving hard problems in software and in life, and
+            especially enjoy coaching others on solving their own problems and
+            finding adventure in the process. I’m also the founder and director
+            of The Lighthouse, where me and roughly thirty of my friends spend
+            time weekly with local teenagers, getting to know them and helping
+            them find their way to the life they were made for. I also love
+            playing music, going on wilderness adventures and playing ultimate
+            frisbee.
+          </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://twitter.com"
@@ -299,7 +309,7 @@ export default function Home({ articles }) {
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter /> */}
-            <Resume />
+          <Resume />
           {/* </div> */}
         </div>
       </Container>
