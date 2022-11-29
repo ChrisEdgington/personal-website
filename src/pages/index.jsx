@@ -327,7 +327,7 @@ export default function Home({ articles }) {
                 Fedex to send CDs of source code back and forth.
               </p>
               <p>
-                I have thirty-three years of hands-on development, research,
+                I now have thirty-three years of hands-on development, research,
                 architecture and communication experience in the global software
                 industry. I have deep experience designing and implementing
                 solutions in most modern languages and advanced debugging skills
