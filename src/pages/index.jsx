@@ -333,7 +333,8 @@ export default function Home({ articles }) {
               <p>
                 Here are some things folks I have worked with have to say:<br></br><br></br>
                 <div className="pl-2">
-                  <h3 className="italic">Chris is the guy you want on your team to make sure your product ships. ~ Mark Moeller, CTO of Velvac / Road-iQ</h3>
+                  <h3 className="italic pb-2">Chris is the guy you want on your team to make sure your product ships. ~ Mark Moeller, CTO of Velvac / Road-iQ</h3>
+                  <h3 className="italic">In addition to his strong software skills, Chris draws from a deep well of leadership experience, enabling him to act as the nuanced voice of reason in the midst of challenging project scenarios. ~ Xiang Li, CEO of Zinc Technologies</h3>
                 </div>
               </p>
               <p>
