@@ -21,6 +21,7 @@ import logoAptiv from '@/images/logos/aptiv.png'
 import logoRoadiq from '@/images/logos/roadiq.png'
 import logoZinc from '@/images/logos/zinc.png'
 import logoPhotodex from '@/images/logos/photodex.png'
+import logoAircore from '@/images/logos/aircore-logo.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -146,14 +147,21 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Zinc Technologies',
-      title: 'Core Software Engineer',
-      logo: logoZinc,
-      start: '2019',
+      company: 'Aircore, Inc.',
+      title: 'Senior Software Engineer, Media Team',
+      logo: logoAircore,
+      start: '2023',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
+    },
+    {
+      company: 'Zinc Technologies',
+      title: 'Core Software Engineer',
+      logo: logoZinc,
+      start: '2019',
+      end: '2023',
     },
     {
       company: 'Road-iQ',
