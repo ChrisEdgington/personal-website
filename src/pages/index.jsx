@@ -356,10 +356,10 @@ export default function Home({ articles }) {
           <div className="lg:pl-20 text-zinc-800 dark:text-zinc-100">
             <ul role="list">
               <SocialLink
-                href="https://twitter.com/EdgingtonC"
+                href="https://x.com/EdgingtonC"
                 icon={TwitterIcon}
               >
-                Follow on Twitter
+                Follow on X
               </SocialLink>
               <SocialLink
                 href="https://www.instagram.com/edgingtonchris/"
