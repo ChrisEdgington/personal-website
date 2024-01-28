@@ -147,8 +147,8 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Aircore, Inc.',
-      title: 'Senior Software Engineer, Media Team',
+      company: 'Aircore, Inc. / Cantina Inc.',
+      title: 'Staff Software Engineer, Web Team',
       logo: logoAircore,
       start: '2023',
       end: {
@@ -226,7 +226,7 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="https://cedgington.dev/2022-chrisedgington-resume.pdf" variant="secondary" className="group mt-6 w-full">
+      <Button href="https://cedgington.dev/ChrisEdgington-resume.pdf" variant="secondary" className="group mt-6 w-full">
         Download Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
