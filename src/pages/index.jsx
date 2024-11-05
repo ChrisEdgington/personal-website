@@ -22,6 +22,7 @@ import logoRoadiq from '@/images/logos/roadiq.png'
 import logoZinc from '@/images/logos/zinc.png'
 import logoPhotodex from '@/images/logos/photodex.png'
 import logoAircore from '@/images/logos/aircore-logo.svg'
+import logoEdgeCraft from '@/images/logos/logoecs.jpg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -147,14 +148,21 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Aircore, Inc. / Cantina Inc.',
-      title: 'Staff Software Engineer, Web Team',
-      logo: logoAircore,
-      start: '2023',
+      company: 'EdgeCraft Studio',
+      title: 'Founder, Director, Chief Architect',
+      logo: logoEdgeCraft,
+      start: '2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
+    },
+    {
+      company: 'Aircore, Inc. / Cantina Inc.',
+      title: 'Staff Software Engineer, Web Team',
+      logo: logoAircore,
+      start: '2023',
+      end: '2024',
     },
     {
       company: 'Zinc Technologies',
@@ -210,9 +218,8 @@ function Resume() {
               <dt className="sr-only">Date</dt>
               <dd
                 className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${
-                  role.end.label ?? role.end
-                }`}
+                aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end
+                  }`}
               >
                 <time dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
@@ -288,19 +295,19 @@ export default function Home({ articles }) {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software architect, expert problem solver, and adventure lover.
+              Software architect, expert problem solver, and adventure lover.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-              I’m Chris, a software architect and problem solver based in rural
-            Indiana. I love solving hard problems in software and in life, and
-            especially enjoy coaching others on solving their own problems and
-            finding adventure in the process. I’m also the founder and director
-            of The Lighthouse, where me and roughly thirty of my friends spend
-            time weekly with local teenagers, getting to know them and helping
-            them find their way to the life they were made for. I also love
-            playing music, going on wilderness adventures and playing ultimate
-            frisbee.
+                I’m Chris, a software architect and problem solver based in rural
+                Indiana. I love solving hard problems in software and in life, and
+                especially enjoy coaching others on solving their own problems and
+                finding adventure in the process. I’m also the founder and director
+                of The Lighthouse, where me and roughly thirty of my friends spend
+                time weekly with local teenagers, getting to know them and helping
+                them find their way to the life they were made for. I also love
+                playing music, going on wilderness adventures and playing ultimate
+                frisbee.
               </p>
               <p>
                 I am a guy who gets things done. My greatest strength is coming
@@ -390,17 +397,17 @@ export default function Home({ articles }) {
                 chris@cedgington.dev
               </SocialLink>
             </ul>
-        <div className="mt-8">
-          {/* <div className="flex flex-col gap-16">
+            <div className="mt-8">
+              {/* <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter /> */}
-          <Resume />
-          {/* </div> */}
-        </div>
+              <Resume />
+              {/* </div> */}
+            </div>
           </div>
 
         </div>
